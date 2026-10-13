@@ -1,6 +1,6 @@
-# Extra Color Palette
+# Extra Color Tools
 
-Documentation for the Extra Color Palette plugin for Unreal Engine. The plugin itself is distributed through Fab; this repository holds its manual and is the place to report problems.
+Documentation for the Extra Color Tools plugin for Unreal Engine. The plugin itself is distributed through Fab; this repository holds its manual and is the place to report problems.
 
 Perceptual color picking for the Unreal Editor. The plugin adds OKLCH controls wherever a color is picked: inside the
 standard Color Picker, behind an **LCH** button next to every color property, and in a dockable tab.
@@ -14,9 +14,9 @@ L look equally light whatever their hue, which RGB and HSV do not give you.
 
 ## Installing
 
-1. Copy the `ExtraColorPalette` folder into the `Plugins` folder of your project (create the folder if there is none),
+1. Copy the `ExtraColorTools` folder into the `Plugins` folder of your project (create the folder if there is none),
    or install the plugin to the engine from Fab.
-2. Start the editor and enable **Extra Color Palette** under **Edit > Plugins** if it is not enabled yet.
+2. Start the editor and enable **Extra Color Tools** under **Edit > Plugins** if it is not enabled yet.
 3. Restart the editor when asked.
 
 ## Where it shows up
@@ -25,9 +25,9 @@ L look equally light whatever their hue, which RGB and HSV do not give you.
 |---|---|
 | Color Picker window | The plugin's block under the stock RGB / HSV sliders |
 | **LCH** button next to a color property | The same block in a popup; a picked color is written to the property, with undo |
-| **Tools > Extra Color Palette** | A dockable tab that follows its size; a picked color is copied to the clipboard and can be pasted onto any color property |
+| **Tools > Extra Color Tools** | A dockable tab that follows its size; a picked color is copied to the clipboard and can be pasted onto any color property |
 
-Both integrations can be switched off in **Edit > Editor Preferences > Plugins > Extra Color Palette**.
+Both integrations can be switched off in **Edit > Editor Preferences > Plugins > Extra Color Tools**.
 
 ## The block
 
@@ -74,7 +74,7 @@ menu can also keep the sliders inside the PBR limits.
 
 ## Settings
 
-**Edit > Editor Preferences > Plugins > Extra Color Palette**
+**Edit > Editor Preferences > Plugins > Extra Color Tools**
 
 | Setting | Meaning |
 |---|---|
@@ -95,14 +95,14 @@ Everything else is set in the plugin's own menus and is stored per user, in the 
 
 ## Translating
 
-The texts live in `Content/Localization/ExtraColorPalette`. Edit the `.po` file of a language, then run from the
+The texts live in `Content/Localization/ExtraColorTools`. Edit the `.po` file of a language, then run from the
 project folder:
 
 ```
-UnrealEditor-Cmd.exe <Project>.uproject -run=GatherText -config="Plugins/ExtraColorPalette/Config/Localization/ExtraColorPalette_Compile.ini"
+UnrealEditor-Cmd.exe <Project>.uproject -run=GatherText -config="Plugins/ExtraColorTools/Config/Localization/ExtraColorTools_Compile.ini"
 ```
 
-After changing the source texts, run the same command with `ExtraColorPalette_Gather.ini` first.
+After changing the source texts, run the same command with `ExtraColorTools_Gather.ini` first.
 
 ## Support
 

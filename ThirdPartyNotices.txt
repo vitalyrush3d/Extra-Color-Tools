@@ -1,10 +1,10 @@
-Extra Color Palette includes material from the projects listed below.
+Extra Color Tools includes material from the projects listed below.
 
 ================================================================================
 Tailwind CSS - default color palette (v4)
 https://github.com/tailwindlabs/tailwindcss
 Used: the OKLCH values of the default colors, in
-Source/ExtraColorPaletteEditor/Private/TailwindPalette.cpp
+Source/ExtraColorToolsEditor/Private/TailwindPalette.cpp
 ================================================================================
 
 MIT License
@@ -33,7 +33,7 @@ SOFTWARE.
 OKLab - a perceptual color space, by Bjorn Ottosson
 https://bottosson.github.io/posts/oklab/
 Used: the conversion matrices between linear sRGB and OKLab, in
-Source/ExtraColorPaletteEditor/Private/OklchColor.cpp
+Source/ExtraColorToolsEditor/Private/OklchColor.cpp
 ================================================================================
 
 Copyright (c) 2020 Bjorn Ottosson
