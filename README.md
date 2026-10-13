@@ -12,6 +12,10 @@ L look equally light whatever their hue, which RGB and HSV do not give you.
 - Platform: Windows (editor only; nothing is added to packaged games)
 - Languages: English, Russian
 
+<img src="images/picker.png" alt="Extra Color Tools inside the Color Picker window" width="420">
+
+*The plugin's block inside the standard Color Picker window, under the stock sliders.*
+
 ## Installing
 
 1. Copy the `ExtraColorTools` folder into the `Plugins` folder of your project (create the folder if there is none),
@@ -48,24 +52,40 @@ A pencil button inside a tab opens the settings of that tab.
 
 ## Tabs
 
+<img src="images/picker.png" alt="Picker tab" width="380">
+
 **Picker** - a color wheel (hue around, chroma outwards) or a square over two channels with the third kept fixed.
 *Filled* stretches the field edge to edge; *True* shows the real outline of the sRGB gamut.
+
+<img src="images/oklch.png" alt="OKLCH tab" width="380">
 
 **OKLCH** - a generated table: lightness in rows, hue in columns, one chroma for all. Rows, columns, lightness range,
 hue offset and a neutral column are set in the tab's menu.
 
+<img src="images/tailwind.png" alt="Tailwind tab" width="380">
+
 **Tailwind** - the default colors of Tailwind CSS v4, as one table or by family with the shades of the chosen one.
+
+<img src="images/pbr.png" alt="PBR tab" width="380">
 
 **PBR** - checks the picked color against commonly used base color limits for non-metals (sRGB 30 - 240, or the
 stricter 50 - 243) and metals (180 - 255). The L slider cannot leave the allowed span; *Fit to Range* moves a color in.
 
+<img src="images/kelvin.png" alt="Kelvin tab" width="380">
+
 **Kelvin** - colors of light from 1000 K to 12000 K, using the engine's own black body conversion.
+
+<img src="images/gradient.png" alt="Gradient A-B tab" width="380">
 
 **Gradient A-B** - a smooth strip between two colors, mixed in OKLCH. Click A or B to make it follow whatever you pick
 next (also from another tab), or take either from the screen with its eye dropper. Drag on the strip to pick.
 
+<img src="images/cool-warm.png" alt="Cool-Warm tab" width="380">
+
 **Cool-Warm** - the picked color in the middle of a strip, cooler to the left and warmer to the right, lightness kept.
 Strength and the warm hue are set in the tab's menu.
+
+<img src="images/blockout.png" alt="Blockout tab" width="380">
 
 **Blockout** - lightness tiers that keep the roles of a level apart (walls, floor, props, accents...). One lightness
 scale carries a short slider per role; the C and H sliders below stay inside the chroma budget of the picked role.
